@@ -13,7 +13,7 @@ spring:
     config:
       server:
         git:
-          uri: https://git.oschina.net/toopoo/config.git
+          uri: https://github.com/fanmengmeng/cloud
           searchPaths: /
 
 management:
