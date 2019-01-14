@@ -12,9 +12,9 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/fanmengmeng/cloud
-          searchPaths: /
+       ## git:
+         ## uri: https://github.com/fanmengmeng/cloud
+         ## searchPaths: /
 
 management:
   endpoints:
