@@ -8,6 +8,7 @@
     <modules>
         <module>eureka</module>
         <module>config</module>
+        <module>gateway</module>
     </modules>
 
     <parent>
