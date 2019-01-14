@@ -12,7 +12,7 @@
 
     <parent>
         <artifactId>cloud</artifactId>
-        <groupId>com.springboot.cloud</groupId>
+        <groupId>com.fanrui</groupId>
         <version>1.0</version>
     </parent>
 
