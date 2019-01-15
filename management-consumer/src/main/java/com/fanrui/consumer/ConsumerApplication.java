@@ -1,4 +1,4 @@
-package com.fanrui.producer;
+package com.fanrui.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class ProducerApplication {
+public class ConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProducerApplication.class, args);
+        SpringApplication.run(ConsumerApplication.class, args);
     }
 }
-

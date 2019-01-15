@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: zull-server
+    name: management-zull
 
 eureka:
   client:
