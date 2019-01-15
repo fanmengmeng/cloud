@@ -1,0 +1,23 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: zull-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    management-producer:
+      path: /producer/**
+      serviceId: management-producer
+    management-consumer:
+      path: /comsumer/**
+      serviceId: management-consumer
+
+
+

@@ -16,10 +16,12 @@
     </parent>
 
     <modules>
-        <module>server</module>
-        <module>admin</module>
-        <module>common</module>
-
+        <module>management-eureka-server</module>
+        <module>management-zull</module>
+        <module>management-config</module>
+        <module>management-common</module>
+        <module>management-producer</module>
+        <module>management-consumer</module>
     </modules>
 
 
