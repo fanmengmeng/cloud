@@ -1,11 +1,11 @@
-package com.fanrui.feign;
+package com.fanrui.consumer.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient("hello")
+@FeignClient("management-producer")
 public interface HelloClient {
 
     @RequestMapping(value="/hello",method= RequestMethod.GET)
