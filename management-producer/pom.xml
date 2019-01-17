@@ -23,6 +23,11 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.fanrui</groupId>
+            <artifactId>management-common</artifactId>
+            <version>1.0</version>
+        </dependency>
 
     </dependencies>
 
