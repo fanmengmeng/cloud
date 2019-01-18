@@ -21,6 +21,7 @@ public class SystemController {
         String jwtToken = Jwts.builder().setSubject(userName)
                 .claim("roles", "member").setIssuedAt(new Date())
                 .signWith(SignatureAlgorithm.HS256, "secretKey").compact();
+
         return JsonResult.success(jwtToken);
     }
 }
