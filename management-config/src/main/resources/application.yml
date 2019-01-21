@@ -17,17 +17,24 @@ spring:
           searchPaths: /
     stream:
       bindings:
-        itemsChannel:
+        input:
+          destination: queue.log.messages
           binder: rabbit
-          destination: item.exchange
-          group: myqueue
-          contentType: application/json
-
-  rabbitmq:
-    addresses: http://127.0.0.1:5672
-    username: guest
-    password: guest
-    virtual-host: /
+          group: logMessageConsumers
+        output:
+          destination: queue.pretty.log.messages
+          binder: local_rabbit
+        binders:
+          defaultRabbit:
+            type: rabbit
+            environment:
+              spring:
+                rabbitmq:
+                  host: 127.0.0.1
+                  port: 5672
+                  username: guest
+                  password: guest
+                  virtual-host: /
 
 management:
   endpoints:
