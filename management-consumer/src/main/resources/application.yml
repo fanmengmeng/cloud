@@ -18,3 +18,4 @@ spring:
       bindings:
         input:
           destination: kafka
+          contentType: application/json
