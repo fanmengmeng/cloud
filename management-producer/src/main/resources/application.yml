@@ -14,8 +14,7 @@ spring:
       kafka:
         binder:
           brokers: localhost:9092
-          autoAddPartitions: true
-          autoCreateTopics: true
+          auto-create-topics: true
           min-partition-count: 1
       bindings:
         output:
