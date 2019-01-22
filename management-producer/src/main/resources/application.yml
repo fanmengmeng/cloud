@@ -15,13 +15,9 @@ spring:
         binder:
           brokers: localhost:9092
           auto-create-topics: true
-          min-partition-count: 1
       bindings:
         output:
-          destination: mytopic
-          content-type: text/plain
-          producer:
-            partitionCount: 1
+          destination: kafka
 
 
 

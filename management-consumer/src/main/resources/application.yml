@@ -17,9 +17,4 @@ spring:
           auto-create-topics: true
       bindings:
         input:
-          destination: event-demo
-          group: s1
-          consumer:
-            autoCommitOffset: false
-            concurrency: 1
-            partitioned: false
+          destination: kafka
