@@ -15,26 +15,6 @@ spring:
         git:
           uri: https://github.com/fanmengmeng/cloud
           searchPaths: /
-    stream:
-      bindings:
-        input:
-          destination: queue.log.messages
-          binder: rabbit
-          group: logMessageConsumers
-        output:
-          destination: queue.pretty.log.messages
-          binder: local_rabbit
-        binders:
-          defaultRabbit:
-            type: rabbit
-            environment:
-              spring:
-                rabbitmq:
-                  host: 127.0.0.1
-                  port: 5672
-                  username: guest
-                  password: guest
-                  virtual-host: /
 
 management:
   endpoints:

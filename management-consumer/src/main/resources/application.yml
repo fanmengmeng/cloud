@@ -1,11 +1,26 @@
 server:
   port: 8040
 
-spring:
-  application:
-    name: management-consumer
-
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: management-consumer
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          autoAddPartitions: true
+          autoCreateTopics: true
+      bindings:
+        input:
+          destination: event-demo
+          group: s1
+          consumer:
+            autoCommitOffset: false
+            concurrency: 1
+            partitioned: false
