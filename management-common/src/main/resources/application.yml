@@ -15,6 +15,12 @@ spring:
     database: mysql
     hibernate:
       ddl-auto: update
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: es-application
 
 eureka:
   client:
